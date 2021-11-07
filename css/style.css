@@ -203,6 +203,46 @@ nav.desktop a {
   margin: 8px 0 0 12px;
 }
 
+section.parallax {
+  width: 100%;
+  min-height: 300px;
+  padding: 40px 0;
+  background-image: url('../image/bg_parallax.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+section.parallax span {
+  color: #2692ff;
+}
+
+.overlay-parallax {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(20, 20, 20, 0.6);
+}
+
+section.parallax > .center {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  color: white;
+}
+
+section.parallax h2 {
+  text-align: center;
+}
+
+section.parallax p {
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 890px) {
   .box-planos-single {
     width: 50%;
