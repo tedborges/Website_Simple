@@ -243,6 +243,118 @@ section.parallax p {
   margin-top: 15px;
 }
 
+section.final-section {
+  padding: 50px 0;
+}
+
+.w50 {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+  margin: 30px 0;
+}
+
+section.final-section h2 {
+  position: relative;
+  font-weight: lighter;
+  color: #777777;
+  font-size: 24px;
+}
+
+section.final-section h2 > .border-efeito {
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #777777;
+  transition: 0.4s;
+}
+
+section.final-section h2:hover > .border-efeito {
+  width: 100px;
+}
+
+.contato input:not([type='submit']) {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding-left: 8px;
+  margin-top: 20px;
+  display: block;
+}
+
+.contato textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-top: 20px;
+  resize: none;
+}
+
+.contato input[type='submit'] {
+  cursor: pointer;
+  background-color: #2692ff;
+  color: white;
+  border: 0;
+  width: 100px;
+  height: 33px;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+
+.time > .w50 {
+  width: 48%;
+  margin: 15px 1%;
+}
+
+.equipe-single {
+  padding: 10px 8px;
+  border: 1px solid #ccc;
+  min-height: 350px;
+  box-shadow: 6px 7px 6px -3px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 6px 7px 6px -3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 6px 7px 6px -3px rgba(0, 0, 0, 1);
+}
+
+.topo-box-usuario {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.box-avatar {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ccc;
+  vertical-align: middle;
+}
+
+.equipe-single .info-usuario {
+  margin-top: 8px;
+  display: inline-block;
+  color: #777777;
+  padding-left: 8px;
+  vertical-align: middle;
+}
+
+.info-usuario > p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.info-usuario > p:nth-of-type(2) {
+  font-style: italic;
+}
+
+.descricao-usuario-box {
+  color: #999999;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-top: 30px;
+  line-height: 30px;
+  padding-left: 18px;
+}
+
 @media screen and (max-width: 890px) {
   .box-planos-single {
     width: 50%;
@@ -254,6 +366,15 @@ section.parallax p {
 }
 
 @media screen and (max-width: 768px) {
+  .w50 {
+    width: 100%;
+  }
+
+  .time > .w50 {
+    width: 100%;
+    margin: 15px 0;
+  }
+
   .box-planos-single {
     width: 100%;
     margin: 10px 0;
