@@ -72,6 +72,42 @@ section.main header {
   color: white;
 }
 
+nav.mobile {
+  display: none;
+  float: right;
+}
+
+nav.mobile > .fa-bars {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  top: 35px;
+}
+
+nav.mobile ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 105px;
+  list-style-type: none;
+  background-color: white;
+  width: 100%;
+}
+
+nav.mobile li {
+  text-align: center;
+  font-weight: lighter;
+  border-bottom: 1px solid #444;
+  padding: 8px 0;
+}
+
+nav.mobile a {
+  text-decoration: none;
+  color: #444;
+  display: block;
+}
+
 nav.desktop {
   margin-top: 30px;
   float: right;
@@ -355,6 +391,14 @@ section.final-section h2:hover > .border-efeito {
   padding-left: 18px;
 }
 
+footer {
+  width: 100%;
+  padding: 10px 2%;
+  text-align: center;
+  color: white;
+  background-color: #444;
+}
+
 @media screen and (max-width: 890px) {
   .box-planos-single {
     width: 50%;
@@ -378,5 +422,13 @@ section.final-section h2:hover > .border-efeito {
   .box-planos-single {
     width: 100%;
     margin: 10px 0;
+  }
+
+  nav.mobile {
+    display: block;
+  }
+
+  nav.desktop {
+    display: none;
   }
 }

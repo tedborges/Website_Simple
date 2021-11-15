@@ -36,6 +36,16 @@
               <li><a href="">Contato</a></li>
             </ul>
           </nav>
+
+          <nav class="mobile">
+            <i class="fa fa-bars"></i>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Contato</a></li>
+            </ul>
+          </nav>
+
           <div class="clear"></div>
         </header>
         <div class="conteudo-header">
@@ -156,6 +166,25 @@
       </div>
     </section>
 
+    <footer>
+      <p>Todos os direitos reservados ao Projeto #6!</p>
+    </footer>
+
     <script src="js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js
+    ">
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $('nav.mobile .fa-bars').click(function(){
+        var el = $(this).parent().find('ul');
+        if(el.is(':visible') == false){
+          el.fadeIn();
+        }else {
+          el.fadeOut();
+        }
+      })
+    })
+  </script>
   </body>
 </html>
